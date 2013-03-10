@@ -17,7 +17,7 @@
        under the License.
  */
 
-package org.sumberterbuka.hilang;
+package com.hilang.app;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

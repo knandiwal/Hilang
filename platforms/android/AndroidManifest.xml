@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="1.0" android:windowSoftInputMode="adjustPan" package="org.sumberterbuka.hilang" xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="1.0" android:windowSoftInputMode="adjustPan" package="com.hilang.app" xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -29,7 +29,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="org.sumberterbuka.hilang" />
+                <category android:name="com.hilang.app" />
             </intent-filter>
         </receiver>
         <service android:name="com.google.android.gcm.GCMIntentService" />
@@ -38,6 +38,6 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <permission android:name="org.sumberterbuka.hilang.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-    <uses-permission android:name="org.sumberterbuka.hilang.permission.C2D_MESSAGE" />
+    <permission android:name="com.hilang.app.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.hilang.app.permission.C2D_MESSAGE" />
 </manifest>
